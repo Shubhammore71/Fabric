@@ -1,0 +1,2 @@
+[31m2024-09-14 16:18:44.979 IST 0001 ERRO[0m [viperutil] [31;1mReadInConfig[0m -> Unable to open the config file: 
+[31m2024-09-14 16:18:44.980 IST 0002 ERRO[0m [orderer.common.server] [31;1mMain[0m -> failed to parse config:  Error reading configuration: open : no such file or directory

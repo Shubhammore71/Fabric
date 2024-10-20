@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+
+  ca.org4.example.com:
+    container_name: ca.org4.example.com
+    image: hyperledger/fabric-ca:latest
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca-org4
+    ports:
+      - "8054:7054"
+    command: fabric-ca-server start -b admin:adminpw
+    volumes:
+      - ./docker/certificates/org4:/etc/hyperledger/fabric-ca-server
